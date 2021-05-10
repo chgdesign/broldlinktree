@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --roxo: #800080;
+    --preto: #1C1C1C;
+    --cinza_escuro: #727272;
+    --cinza_claro: #f8f8fa;
+    --branco: #FFFFFF;  
+}
+
+@font-face {
+    font-family: lemonmilk-bold;
+    src: url(fonts/lemonmilk-bold.otf);
+}
+  
+  @font-face {
+    font-family: lemonmilk-light;
+    src: url(fonts/lemonmilk-light.otf);
+}
+
+html, body {
+    background: var(--branco);
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#content {
+    width: 80%;
+    max-width: 670px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    font-family: 'lemonmilk-bold';
+    font-size: 23px;
+    color: var(--preto);
+    margin-top: 40px;
+}
+
+h1 span {
+    color: var(--roxo);
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+ul li {
+	margin: 0;
+    position: relative;
+    background-color: var(--roxo);
+    margin-bottom: 25px;
+    padding: 15px 18px 18px 18px ;
+    border-radius: 8px;
+    font-family: 'lemonmilk-light';
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: var(--cinza_escuro);
+    color: var(--branco);
+}
+
+.fade {
+    transition: 0.35s ease-in-out;
+}
+
+@keyframes fadeleft {
+    0% {opacity: 0%; transform: translate(-20px, 0);}
+    100% {opacity: 100%;}
+}
+
+#content i {
+    margin-right: 8px;
+    transform: translate(0px, 1px);
+    font-size: 17px;
+}
+
+.logo {
+    background: url('img/logo.svg') no-repeat;
+    width: 170px;
+    height: 69px;
+    background-size: contain;    
+    transition: transform .3s;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-2 {
+    background: url('img/logo.svg') no-repeat;
+    width: 258px;
+    height: 105px;
+    background-size: contain;    
+    transition: transform .3s;
+    margin: 0 auto;
+}
